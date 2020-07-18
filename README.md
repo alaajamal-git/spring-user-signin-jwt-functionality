@@ -25,4 +25,4 @@ steps of running users web service:
 
 3. When login request comes,then spring will call attemptAuthentication method which will call getAuthenticationManager to get AuthenticationManager that we have registered. This manager will call loadUserByUsername method to get User object that have the valid token and compare it with which embadded in the UsernamePasswordAuthenticationToken object.
 
-4.If the authentication is successful then spring framework will call successfulAuthentication method in this method we generate JWT token using apache json web token dependency and add this token with userId to the response header.
+4. If the authentication is successful then spring framework will call successfulAuthentication method in this method we generate JWT token using apache json web token dependency and add this token with userId to the response header.
